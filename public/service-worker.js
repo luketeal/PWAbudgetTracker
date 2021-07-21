@@ -21,14 +21,13 @@ self.addEventListener("install", event => {
   );
 });
 
-// The activate handler takes care of cleaning up old caches.
+// Clean up old caches.
 self.addEventListener("activate", event => {
   const currentCaches = [STATIC_CACHE, RUNTIME_CACHE];
   event.waitUntil(
     caches
       .keys()
       .then(cacheNames => {
-        // return array of cache names that are old to delete
         return cacheNames.filter(
           cacheName => !currentCaches.includes(cacheName)
         );
@@ -54,7 +53,7 @@ self.addEventListener("fetch", event => {
     return;
   }
 
-  // handle runtime GET requests for data from /api routes
+  // handle runtime GET requests for data from /api/transactions routes
   if (event.request.url.includes("/api/transaction")) {
     // make network request and fallback to cache if network request fails (offline)
     event.respondWith(
