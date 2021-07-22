@@ -13,7 +13,7 @@ This is a Budget Progressive Web App deployed on heroku that allows users to add
 * [Questions](#Questions)  
 
 ## Installation 
-Go to [the website](https://sheltered-castle-78350.herokuapp.com/) and check it out! 
+Go to [the website](https://sheltered-castle-78350.herokuapp.com/) and check it out! To use offline, download the application from the browser (see usage demo for demonstration).
 
 ## Usage 
 1. From the landing page, users can add and subtract funds, view a chart of the budget over time, as well as recent transactions
