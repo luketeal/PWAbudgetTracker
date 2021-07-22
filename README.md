@@ -37,3 +37,6 @@ If you have any questions, contact me:
 Email: l.teal21@gmail.com
 
 [GitHub Profile](https://github.com/luketeal)
+
+## Credits
+Initial application, IndexDB, Manifest, and Service Worker files based on information provided by Trilogy Education Services, LLC, a 2U, Inc. brand.
